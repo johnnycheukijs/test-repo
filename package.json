@@ -1,0 +1,24 @@
+{
+    "name": "@scom/test-repo",
+    "version": "0.1.1",
+    "types": "types",
+    "main": "lib/index.js",
+    "dependencies": {
+        "@scom/scom-dev-contract": "^0.1.7"
+    },
+    "devDependencies": {
+        "@ijstech/compiler": "^0.1.45",
+        "@ijstech/eth-wallet": "^0.1.35",
+        "@ijstech/node": "^0.1.43",
+        "@types/mocha": "9.1.1",
+        "@types/node": "18.8.4",
+        "ganache": "7.5.0",
+        "mocha": "10.0.0",
+        "ts-node": "10.9.1",
+        "typescript": "5.0.4"
+    },
+    "scripts": {
+        "build": "rm -rf dist && npx @ijstech/compiler",
+        "start": "node node_modules/@ijstech/node/lib/server data/config.js"
+    }
+}
